@@ -1,0 +1,610 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    body{
+        background:linear-gradient(#73c1ff,#fff);
+        max-width: 100vw;
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+
+    .custom-container{
+        background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.7));
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
+        min-height: 100vh;
+        max-width: 70vw;
+        margin:0 auto;
+    }
+
+header{
+    min-height: 100vh;
+    max-width: 100vw;
+    border: 1px solid black;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)) , url('../images/life\ coaching\ -\ me\ facilitating.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+}
+.mobile-responsive{
+    display: none;
+    min-height: 10vh;
+    max-width: 100vw;
+    background-color: #D9FFDB;
+    /* border:1px solid black; */
+z-index: 1000;
+    transition:.8s all;
+}
+.mobile-responsive .logo{
+    width: 30%;
+}
+.mobile-responsive .logo img{
+    width:150px;
+    height:10vh;
+    margin:0 10px;
+}
+
+.mobile-responsive .mobile-navbar{
+    display: none;
+    /* flex-direction: row; */
+    
+}
+.mobile-navbar .logo{
+    width:40%;
+}
+.mobile-navbar .ul{
+    width:50%;
+}
+/* .mobile-navbar .menu-symble{
+    width:10%;
+} */
+.mobile-navbar .ul ul{
+    list-style: none;
+    float: right;
+}
+.mobile-navbar .ul ul li{
+display:block;
+margin:20px 0;
+}
+.mobile-navbar .ul ul li a{
+    text-decoration: none;
+    color:white;
+    margin:0px 10px;
+}
+
+
+.nav-bar{
+    min-height:10vh;
+    width: 100%;
+   /* background-color:#454545; */
+   background-color: #D9FFDB;
+   position: sticky;
+   top:0;
+   z-index: 1000;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar .ul{
+    width:80%;
+}
+.nav-bar .ul ul{
+    list-style: none;
+    float: right;
+}
+.nav-bar .ul ul li{
+display: inline-block;
+margin:30px 0;
+}
+.nav-bar .ul ul li a{
+    text-decoration: none;
+    color:black;
+    margin:0px 10px;
+}
+
+.nav-bar .logo{
+    width:20%;
+    /* min-height:10vh; */
+}
+.nav-bar .logo .logo-box{
+    width:80px;
+    height:100px;
+}
+.nav-bar .logo .logo-box img{
+    width:100px;
+    height:100%;
+    object-fit: cover;
+    margin:0 10px;
+}
+/* navbar media */
+@media only screen and (max-width:768px){
+    .nav-bar{
+        display: none;
+    }
+    .mobile-responsive{
+        display: block;
+        cursor: pointer;
+    }
+.mobile-responsive .mobile-navbar ul li a{
+   color:black;
+}
+    
+}
+/* navbar media ending */
+
+.hero-body{
+    min-height:90vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid white; */
+}
+.hero-body h1{
+    font-size: 50px;
+    color:white;
+}
+.hero-body p{
+    color:whitesmoke;
+}
+/* cpd logo */
+
+.cpd{
+    min-height: 30vh;
+    max-width: 70vw;
+    margin:0 auto;
+    border:1px solid white;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgb(217, 255, 219,0.5),rgb(217, 255, 219,0.7)) , url('../images/life\ coaching\ -\ me\ facilitating.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background:linear-gradient() */
+}
+.cpd .cpd-des{
+    width:30%;
+   
+    /* border:1px solid black; */
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.cpd-des h1{
+    font-size: 20px;
+}
+.cpd .cpd-logo{
+width:70%;
+height:100%;
+/* border:1px solid black; */
+/* display: flex;
+justify-content: center;
+align-items: center; */
+}
+.cpd-logo img{
+    width:100%;
+    height:50%;
+}
+/* cpd logo end */
+
+
+/* about us  */
+
+.about-us{
+    min-height:50vh;
+    max-width:80vw;
+    margin:10px auto;
+    /* border:1px solid black; */
+}
+.about-us h1{
+    font-size: 35px;
+}
+.about-us p{
+    font-size: 20px;
+    margin:20px auto;
+}
+/* about us ending */
+/* our services */
+.services{
+    min-height:50vh;
+    max-width: 80vw;
+    margin:0 auto;
+    /* border:1px solid black; */
+}
+.services .title h1{
+    font-size: 35px;
+}
+.services .service-grid{
+    margin:30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap:0 5px;
+    border-radius: 5px;
+}
+.service-grid a{
+    text-decoration: none;
+    color:black;
+    transition: .8s all;
+}
+.service-grid a:hover{
+    box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.2),
+    -1px -1px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.service-grid a:hover .service-tab{
+    border:1px solid whitesmoke;
+    border-radius: 5px;
+}
+.service-grid .service-tab{
+    height:150px;
+    border:1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.service-tab .img-box{
+    height:50%;
+    border-bottom:1px solid whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.service-tab .text-info{
+    height:50%;
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* our services ending */
+/* service glance */
+
+.service-glance{
+    min-height:100vh;
+    max-width:100vw;
+    margin:10px auto;
+    /* border:1px solid black; */
+}
+.service-glance h1{
+    text-align: center;
+    font-size: 35px;
+}
+.service-glance .service-glance-img{
+    height:100%;
+    border:inherit;
+}
+.service-glance-img img{
+    width:100%;
+}
+
+
+/* service glance ending */
+
+/*** Mindfulness and maditations pages ***/
+
+.video{
+    min-height:70vh;
+    max-width:80vw;
+    margin:10px auto;
+}
+.video video{
+    width:100%;
+    /* height:100%; */
+    border-radius: 10px;
+}
+
+.text-page-1{
+    min-height:100vh;
+    max-width:80vw;
+    margin:30px auto;
+}
+.text-page-1 p{
+    font-size: 20px;
+    margin:10px 0;
+}
+.question-1-page-1 h1{
+    font-size: 35px;
+}
+.question-2-page-1 h1{
+    font-size: 35px;
+}
+.question-3-page-1 h1{
+    font-size: 35px;
+}
+.question-4-page-1 h1{
+    font-size: 35px;
+}
+/*** Mindfulness and maditations pages ending***/
+
+
+/*** Art Tharapy pages***/
+
+.art-tharapy{
+    min-height:80vh;
+    max-width:80vw;
+    margin:10px auto;
+    background:  url('../images/NEW-art-therapy.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.what-art-tharapy{
+    min-height:80vh;
+    max-width:80vw;
+    margin:10px auto;
+}
+.what-art-tharapy .title h1{
+   margin:20px 0;
+    font-size: 35px;
+}
+.what-art-tharapy p{
+    /* margin:5px 0; */
+    font-size: 20px;
+}
+.what-art-tharapy .img-box{
+    min-height:50vh;
+    max-width:80vw;
+    margin:10px auto;
+}
+.what-art-tharapy .img-box img{
+    width:100%;
+    height:50%;
+}
+.week-table{
+    font-size: 20px;
+    margin:0 10px;
+    list-style: none;
+}
+section.art-therapy-gallary{
+margin:10px 0;
+}
+.art-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 10px 10px;
+}
+.art-grid .art-pics{
+    height:200px;
+}
+.art-grid .art-pics img{
+    width:100%;
+    height:100%;
+}
+/*** Art Tharapy pages ending***/
+
+/*** Positive Psychology pages***/
+
+.positive-psychology-talk{
+    min-height:80vh;
+    max-width:80vw;
+    margin:10px auto;
+    background: url('../images/positivephyschologytalk.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+.sub-title p span{
+    font-size: 35px;
+}
+
+section.pos-gallary{
+    margin:10px 0;
+}
+.pos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 10px 10px;
+}
+.pos-grid .pos-pics{
+    height:200px;
+}
+.pos-grid .pos-pics img{
+    height:100%;
+    width:100%;
+}
+
+/*** Positive Psychology pages ending***/
+
+/*** Reiki pages***/
+
+.reiki{
+    min-height:80vh;
+    max-width:80vw;
+    margin:10px auto;
+    background: url('../images/reikicoursepicture.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+.reiki-levels{
+    list-style: none;
+}
+.reiki-levels li{
+    padding: 10px 0;
+}
+.focus-area-reiki li{
+    padding:10px 0;
+}
+.practical-time li{
+    padding:10px 0;
+}
+
+section.reiki-gallery{
+    margin:10px 0;
+}
+.reiki-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 10px 10px;
+}
+.reiki-grid .reiki-pics{
+    height:200px;
+}
+.reiki-grid .reiki-pics img{
+    height:100%;
+    width:100%;
+}
+/*** Reiki pages ending***/
+
+/* coching page */
+
+.coching{
+    min-height: 80vh;
+    max-width:80vw;
+    margin:10px auto;
+    background: url('../images/life\ coaching\ -\ me\ facilitating.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.heading-section{
+    min-height:100vh;
+    max-width:80vw;
+    margin:30px auto;
+}
+.heading-title h1{
+    font-size: 35px;
+}
+.heading-section p{
+    font-size: 20px;
+    margin:10px 0;
+}
+.coching-type-list li{
+    padding:10px 0;
+}
+.coching-type-offer-list li{
+    padding:10px 0;
+}
+.bespoke-diagram{
+    min-height: 80vh;
+    max-width:80vw;
+    margin:50px auto;
+}
+.bespoke-diagram img{
+    width: 100%;
+}
+.coching-children-diagram{
+    min-height: 80vh;
+    max-width:80vw;
+    margin:30px auto;
+}
+.coching-children-diagram img{
+    width:100%;
+}
+.coching-adult-diagram{
+    min-height: 80vh;
+    max-width:80vw;
+    margin:30px auto;
+}
+.coching-adult-diagram img{
+    width: 100%;
+}
+
+section.coch-gallery{
+    margin:10px 0;
+}
+.coch-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 10px 10px;
+}
+.coch-grid .coch-pics{
+    height:200px;
+}
+.coch-grid .coch-pics img{
+    height:100%;
+    width:100%;
+}
+
+@media only screen and (max-width:500px) {
+    .bespoke-diagram{
+        min-height: 50vh;
+        max-width:80vw;
+        margin:0px auto;
+    }
+    .coching-children-diagram{
+        min-height: 50vh;
+        max-width:80vw;
+        margin:0px auto;
+    }
+}
+/* coching page ending */
+
+/* footer start */
+.footers{
+    min-height:50vh;
+    max-width: 100vw;
+    background-color: #D9FFDB;
+    display: flex;
+    flex-direction: row;
+}
+.map{
+    width:50%;
+    border:1px solid white;
+}
+.address-loc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    border:1px solid white;
+}
+.footers .address-loc p{
+    color:black;
+}
+.footers .address-loc p a{
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+    transition: 0.8s all;
+}
+.footers p a:hover{
+    color:blue;
+}
+.footers p span{
+    font-size: 30px;
+}
+/* footer ending */
+
+/* general media query */
+
+@media only screen and (max-width:500px){
+    .cpd{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .cpd .cpd-des{
+        min-height:15vh;
+    }
+    .cpd .cpd-logo{
+        min-height:15vh;
+    }
+    .footers{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footers .map{
+        height:50%;
+        width:100%;
+    }
+    .footers .address-loc{
+        height:50%;
+        width:100%;
+    }
+    .footers .address-loc iframe{
+        width:100px !important;
+    }
+}
+
+/* general media query end */
