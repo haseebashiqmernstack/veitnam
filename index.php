@@ -24,14 +24,14 @@
             <img src="./images/final-logo.png" alt="">
         </div>
         <div class="ul">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="mindfulness.html">Mindfulness</a></li>
-                <li><a href="arttharapy.html">Art Therapy</a></li>
-                <li><a href="positivepsychology.html">Positive Psychology</a></li>
-                <li><a href="reiki.html">Reiki</a></li>
-                <li><a href="coching.html">Coaching</a></li>
-            </ul> 
+        <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="mindfulness.php">Mindfulness</a></li>
+                <li><a href="arttharapy.php">Art Therapy</a></li>
+                <li><a href="positivepsychology.php">Positive Psychology</a></li>
+                <li><a href="reiki.php">Reiki</a></li>
+                <li><a href="coching.php">Coaching</a></li>
+            </ul>
         </div>
       
    </div>
@@ -46,12 +46,12 @@
         </div>
         <div class="ul">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="mindfulness.html">Mindfulness</a></li>
-                <li><a href="arttharapy.html">Art Therapy</a></li>
-                <li><a href="positivepsychology.html">Positive Psychology</a></li>
-                <li><a href="reiki.html">Reiki</a></li>
-                <li><a href="coching.html">Coaching</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="mindfulness.php">Mindfulness</a></li>
+                <li><a href="arttharapy.php">Art Therapy</a></li>
+                <li><a href="positivepsychology.php">Positive Psychology</a></li>
+                <li><a href="reiki.php">Reiki</a></li>
+                <li><a href="coching.php">Coaching</a></li>
             </ul>
         </div>
  </div>
