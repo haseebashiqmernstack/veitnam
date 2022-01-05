@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
 }
     body{
         background:linear-gradient(#73c1ff,#fff);
@@ -271,7 +272,7 @@ align-items: center; */
     min-height:100vh;
     max-width:100vw;
     margin:10px auto;
-    /* border:1px solid black; */
+    /* border:10px solid green; */
 }
 .service-glance h1{
     text-align: center;
@@ -285,7 +286,14 @@ align-items: center; */
     width:100%;
 }
 
-
+@media only screen and (max-width:500px){
+    .service-glance{
+        min-height:40vh;
+        max-width:100vw;
+        margin:10px auto;
+        /* border:1px solid black; */
+    }
+}
 /* service glance ending */
 
 /*** Mindfulness and maditations pages ***/
@@ -321,6 +329,14 @@ align-items: center; */
 }
 .question-4-page-1 h1{
     font-size: 35px;
+}
+@media only screen and (max-width:500px)
+{
+    .video{
+        min-height:30vh;
+        max-width:80vw;
+        margin:10px auto;
+    }
 }
 /*** Mindfulness and maditations pages ending***/
 
@@ -526,12 +542,17 @@ section.coch-gallery{
 
 @media only screen and (max-width:500px) {
     .bespoke-diagram{
-        min-height: 50vh;
+        min-height: 30vh;
         max-width:80vw;
         margin:0px auto;
     }
     .coching-children-diagram{
-        min-height: 50vh;
+        min-height: 30vh;
+        max-width:80vw;
+        margin:0px auto;
+    }
+    .coching-adult-diagram{
+        min-height: 30vh;
         max-width:80vw;
         margin:0px auto;
     }
@@ -554,12 +575,14 @@ section.coch-gallery{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width:50%;
+    /* align-items: center; */
+    width:100%;
     border:1px solid white;
+    font-size: 20px;
 }
 .footers .address-loc p{
     color:black;
+    padding:0 25px;
 }
 .footers .address-loc p a{
     text-decoration: none;
@@ -581,14 +604,18 @@ section.coch-gallery{
     .cpd{
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center; */
+        /* align-items: center; */
     }
     .cpd .cpd-des{
-        min-height:15vh;
+        /* min-height:15vh; */
     }
     .cpd .cpd-logo{
         min-height:15vh;
+    }
+    .cpd-logo img{
+        width:100%;
+        height:50%;
     }
     .footers{
         display: flex;

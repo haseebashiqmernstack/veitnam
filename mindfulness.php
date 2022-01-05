@@ -120,9 +120,9 @@ Our mindfulness and meditation workshops explore skills and strategies to enable
         <div class="address-loc">
         <p><span><i class="fas fa-map-marker"></i> Address:</span> Ciputra, Hanoi, Vietnam </p>
         <p><span><i class="fas fa-globe"></i> Website:</span> </p>
-        <p><span>Facebook:</span> <a href="https://www.facebook.com/New-Me-Holistic-Centre-104251028680304"><i class="fab fa-facebook"></i> </a></p>
-        <p><span><i class="fab fa-whatsapp"></i> Whatsapp:+84 120 853 1811</span> </p>
-        <p><span><i class="fas fa-phone-square-alt"></i> Telephone:+84 976079523</span></p>
+        <p><span>Facebook:</span> <a href="https://www.facebook.com/New-Me-Holistic-Centre-104251028680304"><i class="fab fa-facebook" style="color:blue;"></i> </a></p>
+        <p><span><i class="fab fa-whatsapp" style="color:green;"></i> Whatsapp:+84 120 853 1811</span> </p>
+        <p><span><i class="fas fa-phone-square-alt" style="color:blue;"></i> Telephone:+84 976079523</span></p>
     </div>
 </div>
 
@@ -131,6 +131,26 @@ Our mindfulness and meditation workshops explore skills and strategies to enable
     <script src="./js/wow.js"></script>
     <script>
         new WOW().init();
+        var mR=document.querySelector(".mobile-responsive");
+        var nav=document.querySelector(".mobile-navbar");
+        var mbtn=document.querySelector(".menu-symble");
+        mbtn.addEventListener("click",function(){
+            var mheight="10vh";
+            // alert("asslam o alaikum")
+            if(mR.style.height==="" || mR.style.height===mheight)
+         {
+            //  alert(mR.style.height)
+            nav.style.display="block";
+            mR.style.zIndex="1000";
+               mR.style.height="100vh";
+         }   
+         else if(mR.style.height==="100vh"){
+            // alert(mR.style.height)
+            nav.style.display="none";
+            mR.style.zIndex="1000";
+              mR.style.height="10vh";
+         }
+        })
     </script>
 </body>
 </html>

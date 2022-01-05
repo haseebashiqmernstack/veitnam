@@ -137,12 +137,12 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14891.4149423682!2d105.79273402118885!3d21.078503247560256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aac0896ba75b%3A0xd95db140eef64eec!2zS2h1IMSRw7QgdGjhu4sgQ2lwdXRyYSwgUGjDuiBUaMaw4bujbmcsIFTDonkgSOG7kywgSGFub2ksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1634229362561!5m2!1sen!2s" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="address-loc">
-    <p><span><i class="fas fa-map-marker"></i> Address:</span> Ciputra, Hanoi, Vietnam </p>
-    <p><span><i class="fas fa-globe"></i> Website:</span> </p>
-    <p><span>Facebook:</span> <a href="https://www.facebook.com/New-Me-Holistic-Centre-104251028680304"><i class="fab fa-facebook"></i> </a></p>
-    <p><span><i class="fab fa-whatsapp"></i> Whatsapp:+84 120 853 1811</span> </p>
-    <p><span><i class="fas fa-phone-square-alt"></i> Telephone:+84 976079523</span></p>
-</div>
+        <p><span><i class="fas fa-map-marker"></i> Address:</span> Ciputra, Hanoi, Vietnam </p>
+        <p><span><i class="fas fa-globe"></i> Website:</span> </p>
+        <p><span>Facebook:</span> <a href="https://www.facebook.com/New-Me-Holistic-Centre-104251028680304"><i class="fab fa-facebook" style="color:blue;"></i> </a></p>
+        <p><span><i class="fab fa-whatsapp" style="color:green;"></i> Whatsapp:+84 120 853 1811</span> </p>
+        <p><span><i class="fas fa-phone-square-alt" style="color:blue;"></i> Telephone:+84 976079523</span></p>
+    </div>
 </div>
 
 <!-- footer ending -->
@@ -150,6 +150,26 @@
 <script src="./js/wow.js"></script>
 <script>
     new WOW().init();
+    var mR=document.querySelector(".mobile-responsive");
+        var nav=document.querySelector(".mobile-navbar");
+        var mbtn=document.querySelector(".menu-symble");
+        mbtn.addEventListener("click",function(){
+            var mheight="10vh";
+            // alert("asslam o alaikum")
+            if(mR.style.height==="" || mR.style.height===mheight)
+         {
+            //  alert(mR.style.height)
+            nav.style.display="block";
+            mR.style.zIndex="1000";
+               mR.style.height="100vh";
+         }   
+         else if(mR.style.height==="100vh"){
+            // alert(mR.style.height)
+            nav.style.display="none";
+            mR.style.zIndex="1000";
+              mR.style.height="10vh";
+         }
+        })
     </script>
 </body>
 </html>
