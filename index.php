@@ -196,7 +196,7 @@
                 <img src="./images/l-coching-logo.PNG" alt="">
             </div>
             <div class="text-info">
-                Life Coching
+                Coaching
             </div>
         </div>
     </a>
