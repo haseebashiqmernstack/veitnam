@@ -189,6 +189,7 @@ align-items: center;
 }
 .cpd-des h1{
     font-size: 20px;
+    margin:0 10px;
 }
 .cpd .cpd-logo{
 width:70%;
@@ -215,10 +216,11 @@ align-items: center; */
 }
 .about-us h1{
     font-size: 35px;
+    margin:0 10px;
 }
 .about-us p{
     font-size: 20px;
-    margin:20px auto;
+    margin:20px 10px;
 }
 /* about us ending */
 /* our services */
@@ -230,6 +232,7 @@ align-items: center; */
 }
 .services .title h1{
     font-size: 35px;
+    margin:0 10px;
 }
 .services .service-grid{
     margin:30px 0;
@@ -325,19 +328,24 @@ align-items: center; */
 }
 .text-page-1 p{
     font-size: 20px;
-    margin:10px 0;
+    margin:10px 10px;
+
 }
 .question-1-page-1 h1{
     font-size: 35px;
+    margin:0 10px;
 }
 .question-2-page-1 h1{
     font-size: 35px;
+    margin:0 10px;
 }
 .question-3-page-1 h1{
     font-size: 35px;
+    margin:0 10px;
 }
 .question-4-page-1 h1{
     font-size: 35px;
+    margin:0 10px;
 }
 @media only screen and (max-width:500px)
 {
@@ -367,12 +375,13 @@ align-items: center; */
     margin:10px auto;
 }
 .what-art-tharapy .title h1{
-   margin:20px 0;
+   margin:20px 10px;
     font-size: 35px;
 }
 .what-art-tharapy p{
     /* margin:5px 0; */
     font-size: 20px;
+    margin:0 10px;
 }
 .what-art-tharapy .img-box{
     min-height:50vh;
