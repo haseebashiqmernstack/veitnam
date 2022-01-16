@@ -2,7 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    list-style: none;
+    /* list-style: none; */
+}
+h1{
+    margin:0 10px;
+}
+p{
+    margin:0 10px;
+}
+ul{
+    margin:0 20px;
 }
     body{
         background:linear-gradient(#73c1ff,#fff);
@@ -487,14 +496,22 @@ section.reiki-gallery{
     margin:30px auto;
 }
 .heading-title h1{
-    font-size: 35px;
+    font-size: 30px;
+margin:0 10px;
 }
 .heading-section p{
     font-size: 20px;
-    margin:10px 0;
+    margin:10px 10px;
+
+}
+.coching-type-list{
+    margin:0 20px;
 }
 .coching-type-list li{
     padding:10px 0;
+}
+.coching-type-offer-list{
+    margin:0 20px;
 }
 .coching-type-offer-list li{
     padding:10px 0;
