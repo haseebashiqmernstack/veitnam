@@ -163,7 +163,7 @@
                 <img src="./images/mindful-logo.PNG" alt="">
             </div>
             <div class="text-info">
-                Mindfulness & Maditation
+                Mindfulness & Meditation
             </div>
         </div>
     </a>
@@ -224,10 +224,9 @@
         </div>
         <div class="address-loc">
         <p><span><i class="fas fa-map-marker"></i> Address:</span> Ciputra, Hanoi, Vietnam </p>
-        <!-- <p><span><i class="fas fa-globe"></i> Website:</span> </p> -->
-        <p><span>Facebook:</span> <a href="https://www.facebook.com/New-Me-Holistic-Centre-104251028680304"><i class="fab fa-facebook" style="color:blue;"></i> </a></p>
-        <p><span><i class="fab fa-whatsapp" style="color:green;"></i> Whatsapp:+84 120 853 1811</span> </p>
-        <p><span><i class="fas fa-phone-square-alt" style="color:blue;"></i> Telephone:+84 976079523</span></p>
+        <p><span><i class="fas fa-phone-square-alt"></i> Telephone:+84 976079523</span></p>
+        <p><span>Facebook:</span> <a href="https://www.facebook.com/New-Me-Holistic-Centre-104251028680304"><i class="fab fa-facebook"></i> </a></p>
+        <p><span><a href="https://wa.me/841208531811"><i class="fab fa-whatsapp"></i></a></span> </p>
     </div>
 </div>
 

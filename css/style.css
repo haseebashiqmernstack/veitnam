@@ -462,12 +462,15 @@ section.pos-gallary{
     list-style: none;
 }
 .reiki-levels li{
+    font-size: 20px;
     padding: 10px 0;
 }
 .focus-area-reiki li{
+    font-size: 20px;
     padding:10px 0;
 }
 .practical-time li{
+    font-size: 20px;
     padding:10px 0;
 }
 
@@ -517,12 +520,14 @@ margin:0 10px;
     margin:0 20px;
 }
 .coching-type-list li{
+    font-size: 20px;
     padding:10px 0;
 }
 .coching-type-offer-list{
     margin:0 20px;
 }
 .coching-type-offer-list li{
+    font-size: 20px;
     padding:10px 0;
 }
 .bespoke-diagram{
