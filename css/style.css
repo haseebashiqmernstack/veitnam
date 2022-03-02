@@ -617,12 +617,29 @@ section.coch-gallery{
 }
 .footers .address-loc p a{
     text-decoration: none;
-    color:white;
+    /* color:white; */
     font-size: 30px;
     transition: 0.8s all;
 }
-.footers p a:hover{
+ #facebookLink{
+    color:darkblue;
+}
+.footers .address-loc #whatsappLink{
+    color:darkgreen;
+}
+.footers .address-loc #facebookLink:hover{
     color:blue;
+}
+.footers .address-loc #whatsappLink:hover{
+    color:green;
+}
+.footers .address-loc h3{
+    margin:0 auto;
+}
+.social-media-links{
+    display: flex;
+    flex-direction: row;
+    margin:0 auto;
 }
 .footers p span{
     font-size: 30px;
